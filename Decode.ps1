@@ -7,5 +7,5 @@ $ioc = [regex]::Matches($decode.Replace(" ",""),"https?://[\w./]+").value
 Write-Output " " 
 Write-host -foreground "red" "Here are the IOC's"
 Write-output  " " 
-Write-Output $ioc
+Write-Output $ioc.replace("http","hxxp")
 Write-Output " "
